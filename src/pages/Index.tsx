@@ -13,16 +13,6 @@ const Index = () => {
         <section id="inicio">
           <HeroSection />
           
-          {/* Van Image - 50% larger */}
-          <div className="container mx-auto px-4 py-8">
-            <img
-              src="https://i.imgur.com/z0skEFv.jpg"
-              alt="Van Tattoo Móvel"
-              className="w-full max-w-6xl mx-auto rounded-lg shadow-2xl"
-              style={{ transform: 'scale(1.2)' }}
-            />
-          </div>
-
           {/* New Image */}
           <div className="container mx-auto px-4 py-8">
             <img
@@ -30,14 +20,6 @@ const Index = () => {
               alt="Tattoo Móvel"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl"
             />
-          </div>
-
-          {/* Intro Text */}
-          <div className="container mx-auto px-4 py-12 max-w-4xl">
-            <p className="text-lg md:text-xl text-foreground text-center leading-relaxed mb-8">
-              A Tattoo Móvel leva tatuagem profissional diretamente para festas e eventos, proporcionando uma experiência única, segura e inesquecível. Não é tatuagem andando na van — é um estúdio móvel montado especialmente para o seu evento!
-            </p>
-            <SocialButtons buttons={["instagram", "whatsapp", "youtube"]} className="mt-8" />
           </div>
         </section>
 
@@ -56,6 +38,14 @@ const Index = () => {
           <p className="text-lg text-foreground text-center max-w-4xl mx-auto mb-12 leading-relaxed">
             Contamos com uma van estilizada e um ônibus equipado para bem atende lo.
           </p>
+          <MediaGallery
+            media={[
+              "https://imgur.com/ZdcX8fX",
+              "https://imgur.com/hmqAEvy",
+              "https://imgur.com/K9b5fMq",
+              "https://imgur.com/P35BARe"
+            ]}
+          />
           <SocialButtons buttons={["instagram", "whatsapp"]} className="mt-12" />
         </section>
 
@@ -126,37 +116,6 @@ const Index = () => {
           <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
         </section>
 
-        {/* Nos eventos */}
-        <section id="nos-eventos" className="container mx-auto px-4 py-24 max-w-7xl">
-          <SectionTitle>Nos eventos</SectionTitle>
-          <p className="text-lg text-foreground text-center max-w-4xl mx-auto mb-12">
-            Veja como trabalhamos dentro de festas e eventos. Estrutura organizada, segura e com materiais totalmente descartáveis.
-          </p>
-          <MediaGallery
-            media={[
-              "https://imgur.com/YgvVbwx",
-              "https://imgur.com/TXSMnm7",
-              "https://imgur.com/Qz0w2G8",
-              "https://imgur.com/oyfe4BH",
-              "https://imgur.com/eKEPfN0",
-              "https://imgur.com/RTIJf5j",
-              "https://imgur.com/LzhrgxD",
-              "https://imgur.com/ZNxrH9j",
-              "https://imgur.com/EWys3cs",
-              "https://imgur.com/7maXHdg",
-              "https://imgur.com/fLRze82",
-              "https://imgur.com/BGTy6Jt",
-              "https://imgur.com/8sUas9D",
-              "https://imgur.com/mJrCYEc",
-              "https://imgur.com/F062J4F",
-              "https://imgur.com/Y0JQAEI",
-              "https://imgur.com/VFWUBLE",
-              "https://imgur.com/0Qk74Zb",
-              "https://imgur.com/WCJIeP2"
-            ]}
-          />
-          <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
-        </section>
 
         {/* Instagram */}
         <section id="instagram" className="container mx-auto px-4 py-24 max-w-7xl">
@@ -233,7 +192,7 @@ const Index = () => {
           <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
             <img src="https://i.imgur.com/iTGbYGe.jpg" alt="Nossa van 1" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
             <img src="https://i.imgur.com/ILUJDrg.jpg" alt="Nossa van 2" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
-            <img src="https://i.imgur.com/R4Gw98l.jpg" alt="Nossa van 3" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
+            <img src="https://i.imgur.com/ZdcX8fX.jpg" alt="Nossa van 3" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
           </div>
           <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
         </section>
