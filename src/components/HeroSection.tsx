@@ -31,8 +31,13 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-4 text-center">
+        {/* Slogan above logo */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 animate-fade-in drop-shadow-2xl">
+          Tatuagem sobre rodas
+        </h1>
+
         {/* Logo */}
-        <div className="mb-6 animate-fade-in">
+        <div className="mb-4 animate-fade-in">
           <img
             src="https://i.imgur.com/CqjFhSe.png"
             alt="Tattoo Móvel Logo"
@@ -40,14 +45,9 @@ const HeroSection = () => {
           />
         </div>
 
-        {/* Slogan */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 animate-fade-in drop-shadow-2xl">
-          Tatuagem sobre rodas
-        </h1>
-
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-white/90 max-w-2xl animate-fade-in drop-shadow-lg">
-          Estúdio móvel profissional para seu evento
+          Levamos tatoagens para seu evento
         </p>
       </div>
     </div>
