@@ -11,9 +11,8 @@ const Navbar = () => {
     { id: "depoimentos", label: "Depoimentos" },
     { id: "tatto-flash", label: "Tatto Flash" },
     { id: "nosso-busao", label: "Nosso busão" },
-    { id: "instagram", label: "Instagram" },
-    { id: "fale-conosco", label: "Fale conosco" },
-    { id: "nossa-van", label: "Nossa van" }
+    { id: "nos-eventos", label: "Nos eventos" },
+    { id: "fale-conosco", label: "Fale conosco" }
   ];
 
   const handleNavClick = (sectionId: string) => {
