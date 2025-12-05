@@ -15,10 +15,10 @@ const Index = () => {
           
           {/* New Image */}
           <div className="container mx-auto px-4 py-8">
-            <img
-              src="https://i.imgur.com/QYmxPwE.jpg"
-              alt="Tattoo Móvel"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl"
+            <MediaGallery 
+              media={["https://imgur.com/QYmxPwE"]} 
+              singleImage 
+              className="max-w-4xl mx-auto"
             />
           </div>
         </section>
@@ -45,6 +45,7 @@ const Index = () => {
               "https://imgur.com/K9b5fMq",
               "https://imgur.com/P35BARe"
             ]}
+            columns={2}
           />
           <SocialButtons buttons={["instagram", "whatsapp"]} className="mt-12" />
         </section>
@@ -55,8 +56,8 @@ const Index = () => {
           <p className="text-lg text-foreground text-center max-w-4xl mx-auto mb-12">
             Experiências reais de quem já viveu o momento Tattoo Móvel.
           </p>
-          <div className="flex justify-center">
-            <MediaGallery media={["https://imgur.com/O4KMo98"]} />
+          <div className="max-w-2xl mx-auto">
+            <MediaGallery media={["https://imgur.com/O4KMo98"]} singleImage />
           </div>
           <div className="text-center mt-12">
             <a
@@ -92,6 +93,7 @@ const Index = () => {
               "https://imgur.com/DXFCR3L",
               "https://imgur.com/5bvYzQq"
             ]}
+            columns={4}
           />
           <div className="text-center mt-12">
             <p className="text-lg text-foreground mb-4">Quer ver mais? Clique no botão abaixo 👇</p>
@@ -113,12 +115,8 @@ const Index = () => {
           <p className="text-lg text-foreground text-center max-w-4xl mx-auto mb-12">
             Estamos atendendo com busão na Av Brasil 28780 altura de Realengo, ao lado do motel Lamour.
           </p>
-          <div className="flex justify-center">
-            <img 
-              src="https://i.imgur.com/372kYnr.jpg" 
-              alt="Nosso busão" 
-              className="w-full max-w-3xl rounded-lg shadow-xl object-cover"
-            />
+          <div className="max-w-3xl mx-auto">
+            <MediaGallery media={["https://imgur.com/372kYnr"]} singleImage />
           </div>
           <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
         </section>
@@ -129,39 +127,26 @@ const Index = () => {
           <p className="text-lg text-foreground text-center max-w-4xl mx-auto mb-12">
             Conheça nossa van totalmente equipada, onde realizamos parte da preparação dos materiais e higienização.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto mb-12">
-            <img src="https://i.imgur.com/iTGbYGe.jpg" alt="Nos eventos 1" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
-            <img src="https://i.imgur.com/ILUJDrg.jpg" alt="Nos eventos 2" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
-            <img src="https://i.imgur.com/ZdcX8fX.jpg" alt="Nos eventos 3" className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-lg shadow-xl object-cover" />
-          </div>
+          <MediaGallery
+            media={[
+              "https://imgur.com/iTGbYGe",
+              "https://imgur.com/ILUJDrg",
+              "https://imgur.com/ZdcX8fX"
+            ]}
+            columns={3}
+            className="max-w-5xl mx-auto mb-12"
+          />
           
           {/* New event photos with descriptions */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="flex flex-col items-center">
-              <img 
-                src="https://i.imgur.com/372kYnr.jpg" 
-                alt="Na Prefeitura do Rio de Janeiro" 
-                className="w-full rounded-lg shadow-xl object-cover mb-4"
-              />
-              <p className="text-foreground text-center font-medium">Na Prefeitura do Rio de Janeiro</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <img 
-                src="https://i.imgur.com/Ygwd7iF.jpg" 
-                alt="WSL Saquarema 2025" 
-                className="w-full rounded-lg shadow-xl object-cover mb-4"
-              />
-              <p className="text-foreground text-center font-medium">WSL Saquarema 2025</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <img 
-                src="https://i.imgur.com/VpCKroN.jpg" 
-                alt="Empresa BLUE Man" 
-                className="w-full rounded-lg shadow-xl object-cover mb-4"
-              />
-              <p className="text-foreground text-center font-medium">Empresa BLUE Man</p>
-            </div>
-          </div>
+          <MediaGallery
+            media={[
+              { url: "https://imgur.com/372kYnr", description: "Na Prefeitura do Rio de Janeiro" },
+              { url: "https://imgur.com/Ygwd7iF", description: "WSL Saquarema 2025" },
+              { url: "https://imgur.com/VpCKroN", description: "Empresa BLUE Man" }
+            ]}
+            columns={3}
+            className="max-w-6xl mx-auto"
+          />
           <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
         </section>
 
