@@ -116,7 +116,7 @@ const Index = () => {
             Estamos atendendo com busão na Av Brasil 28780 altura de Realengo, ao lado do motel Lamour.
           </p>
           <div className="max-w-3xl mx-auto">
-            <MediaGallery media={["https://imgur.com/372kYnr"]} singleImage />
+            <MediaGallery media={["https://imgur.com/6DMxWeb"]} singleImage />
           </div>
           <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
         </section>
@@ -125,24 +125,24 @@ const Index = () => {
         <section id="nos-eventos" className="container mx-auto px-4 py-24 max-w-7xl">
           <SectionTitle>Nos eventos</SectionTitle>
           <p className="text-lg text-foreground text-center max-w-4xl mx-auto mb-12">
-            Conheça nossa van totalmente equipada, onde realizamos parte da preparação dos materiais e higienização.
+            Peguei carona com a tattoomovel nos registros de alguns eventos que participamos
           </p>
           <MediaGallery
             media={[
               "https://imgur.com/iTGbYGe",
-              "https://imgur.com/ILUJDrg",
-              "https://imgur.com/ZdcX8fX"
-            ]}
-            columns={3}
-            className="max-w-5xl mx-auto mb-12"
-          />
-          
-          {/* New event photos with descriptions */}
-          <MediaGallery
-            media={[
-              { url: "https://imgur.com/372kYnr", description: "Na Prefeitura do Rio de Janeiro" },
-              { url: "https://imgur.com/Ygwd7iF", description: "WSL Saquarema 2025" },
-              { url: "https://imgur.com/VpCKroN", description: "Empresa BLUE Man" }
+              "https://imgur.com/ZdcX8fX",
+              "https://imgur.com/w6MkZq5",
+              "https://imgur.com/AsZg0MS",
+              "https://imgur.com/LHHZvXF",
+              "https://imgur.com/LAejHLh",
+              "https://imgur.com/37Xqplv",
+              "https://imgur.com/qMFQjb9",
+              "https://imgur.com/o2zzJiq",
+              { url: "https://imgur.com/Y9rXgDE", description: "Multicenter Niterói" },
+              { url: "https://imgur.com/8PQh8Vy", description: "Visita técnica na UFRJ" },
+              { url: "https://imgur.com/jWUmQxe", description: "UFRJ" },
+              { url: "https://imgur.com/LWY3pci", description: "BlendBBQ" },
+              { url: "https://imgur.com/xDwNZEE", description: "Clientes ilustres" }
             ]}
             columns={3}
             className="max-w-6xl mx-auto"
@@ -177,14 +177,6 @@ const Index = () => {
         </section>
       </main>
       
-      {/* Footer */}
-      <footer className="border-t border-tattoo-red/20 py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">
-            © 2024 Tattoo Móvel - Tatuagem sobre rodas
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };
