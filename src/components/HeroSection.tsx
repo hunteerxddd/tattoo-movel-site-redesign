@@ -47,7 +47,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-white/90 max-w-2xl animate-fade-in drop-shadow-lg">
-          Levamos tatoagens para seu evento
+          Levamos tatuagem para seu evento
         </p>
       </div>
     </div>
