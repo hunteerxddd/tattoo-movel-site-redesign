@@ -12,6 +12,7 @@ const Navbar = () => {
     { id: "tatto-flash", label: "Tatto Flash" },
     { id: "nosso-busao", label: "Nosso busão" },
     { id: "nos-eventos", label: "Nos eventos" },
+    { id: "blueman", label: "BlueMan" },
     { id: "fale-conosco", label: "Fale conosco" }
   ];
 
