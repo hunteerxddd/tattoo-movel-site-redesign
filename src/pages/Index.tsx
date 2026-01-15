@@ -150,6 +150,25 @@ const Index = () => {
           <SocialButtons buttons={["whatsapp", "instagram"]} className="mt-12" />
         </section>
 
+        {/* Nossa visita na empresa BlueMan */}
+        <section id="blueman" className="container mx-auto px-4 py-24 max-w-7xl">
+          <SectionTitle>Nossa visita na empresa BlueMan</SectionTitle>
+          <div className="max-w-2xl mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+              <iframe
+                src="https://www.instagram.com/reel/DNEFhJCsbnO/embed/"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                frameBorder="0"
+                scrolling="no"
+                allowFullScreen
+                loading="lazy"
+                title="Instagram Reel - Nossa visita na empresa BlueMan"
+              />
+            </div>
+          </div>
+          <SocialButtons buttons={["instagram", "whatsapp"]} className="mt-12" />
+        </section>
+
         {/* Fale conosco */}
         <section id="fale-conosco" className="container mx-auto px-4 py-24 max-w-4xl">
           <SectionTitle>Fale conosco</SectionTitle>
